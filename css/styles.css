@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.05rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+}
+
+main {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+main .top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main .bottom {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.top {
+    padding: 30px;
+    background-color: white;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.bottom-left, .bottom-right {
+    padding: 35px 30px;
+}
+
+.bottom-left {
+    background-color: hsl(179, 62%, 43%);
+    flex: 50%;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-right {
+    flex: 50%;
+    background-color: hsl(179, 60%, 48%);
+    border-bottom-right-radius: 10px;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.top h2 {
+    color: hsl(71, 73%, 54%);
+}
+
+.top p {
+    color: hsl(218, 22%, 67%);
+    line-height: 1.5;
+}
+
+.top *:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.bottom-left > *:not(:last-child), .bottom-right > *:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.offers *:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.price p {
+    color: hsl(204, 43%, 93%);
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 26px;
+    padding: 15px;
+    border-radius: 7px;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    width: 95%;
+    margin: 0 auto;
+    letter-spacing: 1.4px;
+    box-shadow: 0 .8rem 1rem rgba(0,0,0,.15);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+button::before {
+    content: "Sign Up";
+}
+
+@media (max-width: 650px) {
+    main {
+        width: 550px;
+        margin: 0 10px;
+    }
+
+    .top {
+        padding: 35px 13px;
+    }
+
+    .bottom-left, .bottom-right {
+        padding: 35px 13px;
+    }
+
+    button {
+        top: 24px;
+    }
+}
+
+@media (max-width: 550px) {
+    button {
+        top: 19px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .bottom {
+        flex-direction: column;
+    }
+
+    main {
+        width: 350px;
+        margin: 0 15px;
+    }
+
+    .bottom-left {
+        border-radius: 0;
+    }
+
+    .bottom-right {
+        border-bottom-left-radius: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .top {
+        padding: 35px 20px;
+    }
+
+    .top p {
+        line-height: 2;
+    }
+
+    .bottom-left, .bottom-right {
+        padding: 35px 20px;
+    }
+
+    button {
+        top: 12px;
+    }
+
+    main {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 350px) {
+    .top {
+        padding: 35px 16px;
+        padding-right: 10px;
+    }
+}
