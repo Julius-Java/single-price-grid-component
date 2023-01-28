@@ -14,12 +14,13 @@ body {
 }
 
 h1 {
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 h3 {
@@ -50,6 +51,7 @@ main .bottom {
 
 .top {
     padding: 30px;
+    padding-bottom: 40px;
     background-color: white;
 }
 
@@ -147,6 +149,7 @@ button::before {
 
     .top {
         padding: 35px 13px;
+        padding-bottom: 40px;
     }
 
     .bottom-left, .bottom-right {
@@ -190,6 +193,7 @@ button::before {
 
     .top {
         padding: 35px 20px;
+        padding-bottom: 40px;
     }
 
     .top p {
@@ -213,6 +217,7 @@ button::before {
 @media (max-width: 350px) {
     .top {
         padding: 35px 16px;
+        padding-bottom: 40px;
         padding-right: 10px;
     }
 }
