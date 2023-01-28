@@ -33,9 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Front-End Mentor](https://your-solution-url.com)
-
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [Front-End Mentor](https://github.com/Julius-Java/single-price-grid-component)
+- Live Site URL: [Github Pages](https://julius-java.github.io/single-price-grid-component/)
 
 ## My process
 
